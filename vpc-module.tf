@@ -1,7 +1,8 @@
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   version = "4.0.1"
-  name =  "${local.name}-${var.vpc_name}"   #"myvpc"
+  name =  "${local.name}-${var.vpc_name}"   #"myvpc" #Generally you setup your module b4 variablizing it makes alot of sense. 
+                                            #This will make the module portable and production ready
   cidr = var.vpc_cidr_block #10.0.0.0/20
 
   azs             = var.vpc_availability_zones #["us-east-2a", "us-east-2c"]
