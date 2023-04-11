@@ -1,4 +1,4 @@
 # Generic Variables
-aws_region = "us-east-1"  
+region = "us-east-1"  
 environment = "dev"
-business_divsion = "sales"
+business_division = "sales"

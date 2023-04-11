@@ -1,7 +1,7 @@
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   version = "4.0.1"
-  name =  "${local.name}-${var.vpc_name}"   #"vpc-dev"
+  name =  "${local.name}-${var.vpc_name}"   #"myvpc"
   cidr = var.vpc_cidr_block #10.0.0.0/20
 
   azs             = var.vpc_availability_zones #["us-east-2a", "us-east-2c"]
